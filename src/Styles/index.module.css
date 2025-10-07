@@ -194,13 +194,13 @@ main .hero p:nth-child(3) {
     max-width: 800px;
     line-height: 1.6;
 }
-.services-header h2 {
+.service_header h2 {
     font-family: var(--font-primary);
     font-size: 3rem;
     margin-bottom: 2rem;
     text-align: center;
 }
-.services-header p {
+.service_header p {
     font-family: var(--font-secondary);
     font-size: 1.5rem;
     line-height: 1.6;
@@ -230,7 +230,7 @@ main .hero p:nth-child(3) {
     width: 100%;
     height: auto;
 }
-.services-card {
+.serviceCard {
     text-wrap: balance;
     background-color: var(--header-color);
     border-radius: 10px;
@@ -240,7 +240,7 @@ main .hero p:nth-child(3) {
     height: auto;
     transition: transform 0.3s ease;
 }
-.services-card img {
+.serviceCard img {
     display: inline-block;
     height: 150px;
     width: auto;
@@ -249,18 +249,18 @@ main .hero p:nth-child(3) {
     border-radius: 10px;
     margin-bottom: 1rem;
 }
-.services-card h3 {
+.serviceCard h3 {
     font-family: var(--font-primary);
     font-size: 1.5rem;
     margin-bottom: 1rem;
 }
-.services-card p {
+.serviceCard p {
     font-family: var(--font-secondary);
     font-size: 1rem;
     line-height: 1.4;
     font-weight: 600;
 }
-.services-card:hover {
+.serviceCard:hover {
     transform: scale(1.05);
 }
 
