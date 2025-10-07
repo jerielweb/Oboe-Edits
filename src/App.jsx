@@ -1,10 +1,12 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Footer } from './Footer.jsx';
+import { Services } from './Services.jsx'
+import './Styles/global.css'
+// Pages
 import HeadersApp from './Header.jsx'
 import Index from './Index.jsx'
-import { Services } from './Services.jsx'
-import Footer from './Footer.jsx';
 
 
 createRoot(document.getElementById('root')).render(

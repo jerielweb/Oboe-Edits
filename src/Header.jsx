@@ -1,6 +1,5 @@
 import { NavLink } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import './Styles/index.css'
 import logoindex from './assets/favicons/logo-index.png'
 
 export function HeadersApp () {
