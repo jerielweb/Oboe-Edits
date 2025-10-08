@@ -32,46 +32,6 @@ main .hero h1 {
     color: var(--primary-color);
     margin-bottom: 1rem;
 }
-.pageIndex .hero {
-    text-wrap: balance;
-    display: flex;
-    position: relative;
-    z-index: 1;
-    backdrop-filter: blur(5px);
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 4rem 2rem;
-    width: 100%;
-    height: auto;
-    min-height: 100vh;
-}
-.pageIndex .hero h1 {
-    font-family: var(--font-primary);
-    font-size: 5rem;
-    color: var(--primary-color);
-    margin-bottom: 1rem;
-}
-.pageIndex .hero p {
-    font-family: var(--font-secondary);
-    font-size: 3rem;
-    font-weight: 700;
-    color: var(--quaternary-color);
-    max-width: 750px;
-}
-.pageIndex .hero p:nth-child(3) {
-    font-size: 1.5rem;
-    margin-top: 1rem;
-    font-weight: 600;
-    color: var(--primary-color);
-}
-.pageIndex .buttonsIndex {
-    margin-top: 2rem;
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-}
 main .hero p {
     font-family: var(--font-secondary);
     font-size: 3rem;
@@ -85,13 +45,13 @@ main .hero p:nth-child(3) {
     font-weight: 600;
     color: var(--primary-color);
 }
-.buttonsIndex {
+.buttonIndex {
     margin-top: 2rem;
     display: flex;
     flex-direction: row;
     gap: 2rem;
 }
-.buttonsIndex .startButton {
+.buttonIndex .startButton {
     background-color: var(--secondary-color);
     color: var(--tertiary-color);
     padding: 1rem 2rem;
@@ -102,13 +62,13 @@ main .hero p:nth-child(3) {
     transition: background-color 0.2s ease;
 }
 
-.buttonsIndex .startButton:hover,
-.buttonsIndex .learnButton:hover {
+.buttonIndex .startButton:hover,
+.buttonIndex .learnButton:hover {
     background-color: var(--accent-color);
     color: var(--tertiary-color);
 }
 
-.buttonsIndex .learnButton {
+.buttonIndex .learnButton {
     background-color: var(--primary-color);
     color: var(--tertiary-color);
     padding: 1rem 2rem;
@@ -135,42 +95,6 @@ main .hero p:nth-child(3) {
     border-radius: 25px;
 }
 
-.about {
-    background-color: #025e94;
-    color: var(--tertiary-color);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 4rem 2rem;
-    text-align: center;
-    width: 100%;
-    height: auto;
-}
-
-.pageIndex .about {
-    background-color: #025e94;
-    color: var(--tertiary-color);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 4rem 2rem;
-    text-align: center;
-    width: 100%;
-    height: auto;
-}
-.pageIndex .about h2 {
-    font-family: var(--font-primary);
-    font-size: 3rem;
-    margin-bottom: 1rem;
-}
-.pageIndex .about p {
-    font-family: var(--font-secondary);
-    font-size: 1.5rem;
-    max-width: 800px;
-    line-height: 1.6;
-}
 .about {
     background-color: #025e94;
     color: var(--tertiary-color);
@@ -220,7 +144,7 @@ main .hero p:nth-child(3) {
     height: auto;
     gap: 2rem;
 }
-.services-container {
+.servicesContainer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -230,7 +154,7 @@ main .hero p:nth-child(3) {
     width: 100%;
     height: auto;
 }
-.serviceCard {
+.servicesCard {
     text-wrap: balance;
     background-color: var(--header-color);
     border-radius: 10px;
@@ -240,7 +164,7 @@ main .hero p:nth-child(3) {
     height: auto;
     transition: transform 0.3s ease;
 }
-.serviceCard img {
+.servicesCard img {
     display: inline-block;
     height: 150px;
     width: auto;
@@ -249,149 +173,17 @@ main .hero p:nth-child(3) {
     border-radius: 10px;
     margin-bottom: 1rem;
 }
-.serviceCard h3 {
+.servicesCard h3 {
     font-family: var(--font-primary);
     font-size: 1.5rem;
     margin-bottom: 1rem;
 }
-.serviceCard p {
+.servicesCard p {
     font-family: var(--font-secondary);
     font-size: 1rem;
     line-height: 1.4;
     font-weight: 600;
 }
-.serviceCard:hover {
-    transform: scale(1.05);
-}
-
-.service {
-    background-color: var(--tertiary-color);
-    color: var(--primary-color);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 4rem 2rem;
-    text-align: center;
-    width: 100%;
-    height: auto;
-    gap: 2rem;
-}
-.service_header h2 {
-    font-family: var(--font-primary);
-    font-size: 3rem;
-    margin-bottom: 2rem;
-    text-align: center;
-}
-.pageIndex .service_header h2 {
-    font-family: var(--font-primary);
-    font-size: 3rem;
-    margin-bottom: 2rem;
-    text-align: center;
-}
-.pageIndex .service_header p {
-    font-family: var(--font-secondary);
-    font-size: 1.5rem;
-    line-height: 1.6;
-    max-width: 800px;
-    margin: 0 auto;
-}
-.pageIndex .services {
-    background-color: var(--tertiary-color);
-    color: var(--primary-color);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 4rem 2rem;
-    text-align: center;
-    width: 100%;
-    height: auto;
-    gap: 2rem;
-}
-.pageIndex .services-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-    max-width: 1500px;
-    width: 100%;
-    height: auto;
-}
-.pageIndex .serviceCard {
-    text-wrap: balance;
-    background-color: var(--header-color);
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 1rem;
-    width: 350px;
-    height: auto;
-    transition: transform 0.3s ease;
-}
-.pageIndex .serviceCard img {
-    display: inline-block;
-    height: 150px;
-    width: auto;
-    object-fit: cover;
-    width: auto;
-    border-radius: 10px;
-    margin-bottom: 1rem;
-}
-.pageIndex .serviceCard h3 {
-    font-family: var(--font-primary);
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-}
-.pageIndex .serviceCard p {
-    font-family: var(--font-secondary);
-    font-size: 1rem;
-    line-height: 1.4;
-    font-weight: 600;
-}
-.pageIndex .serviceCard:hover {
-    transform: scale(1.05);
-}
-.services-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-    max-width: 1500px;
-    width: 100%;
-    height: auto;
-}
-.serviceCard {
-    text-wrap: balance;
-    background-color: var(--header-color);
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 1rem;
-    width: 350px;
-    height: auto;
-    transition: transform 0.3s ease;
-}
-.serviceCard img {
-    display: inline-block;
-    height: 150px;
-    width: auto;
-    object-fit: cover;
-    width: auto;
-    border-radius: 10px;
-    margin-bottom: 1rem;
-}
-.serviceCard h3 {
-    font-family: var(--font-primary);
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-}
-.serviceCard p {
-    font-family: var(--font-secondary);
-    font-size: 1rem;
-    line-height: 1.4;
-    font-weight: 600;
-}
-.serviceCard:hover {
+.servicesCard:hover {
     transform: scale(1.05);
 }

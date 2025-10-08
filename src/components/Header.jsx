@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import logoindex from './assets/favicons/logo-index.png'
+import logoindex from './../assets/favicons/logo-index.png'
 
 export function HeadersApp () {
     const [scrolled, setScrolled] = useState(false);
@@ -10,15 +10,15 @@ export function HeadersApp () {
             if (isScrolled !== scrolled) {
                 setScrolled(isScrolled);
             }
-        };
+        }
         window.addEventListener('scroll', handleScroll);
         return () => {
             window.removeEventListener('scroll', handleScroll);
-        };
-    }, [scrolled]);
-    const headerClass = scrolled ? 'header scroll-header' : 'header';
+        }
+    }, [scrolled])
+    const headerClass = scrolled ? 'header scroll-header' : 'header'
     const getNavLinkClass = ({ isActive }) => {
-        return isActive ? 'nav-link active' : 'nav-link';
+        return isActive ? 'nav-link active' : 'nav-link'
     }
 
 
