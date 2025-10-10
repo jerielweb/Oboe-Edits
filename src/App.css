@@ -183,7 +183,7 @@ footer .footer-links {
 /* Responsive Styles */
 @media (max-width: 768px) {
     body {
-        background-image: var(--bg-image-mobile);
+        background-image: url('../assets/img/background-mobile.webp');
         background-attachment: fixed;
     }
     .navigation {
