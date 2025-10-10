@@ -23,7 +23,7 @@
     --font-secondary: 'Open Sans', sans-serif;
 }
 body {
-    background: var(--bg-image);
+    background-image: var(--bg-image);
     font-family: var(--font-secondary);
     background-color: var(--tertiary-color);
     background-attachment: fixed;
@@ -183,7 +183,8 @@ footer .footer-links {
 /* Responsive Styles */
 @media (max-width: 768px) {
     body {
-        background: var(--bg-image-mobile);
+        background-image: var(--bg-image-mobile);
+        background-attachment: fixed;
     }
     .navigation {
         background-color: transparent;
