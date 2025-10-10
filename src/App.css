@@ -184,7 +184,6 @@ footer .footer-links {
 @media (max-width: 768px) {
     body {
         background: var(--bg-image-mobile);
-        background-attachment: scroll;
     }
     .navigation {
         background-color: transparent;
