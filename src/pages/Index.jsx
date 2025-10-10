@@ -6,7 +6,7 @@ import Archive from './../assets/favicons/editar-archivo.png'
 
 export function Index  () {
     return (
-        <main className={stytleIndex.main}>
+        <div className={stytleIndex.main}>
             <section className={stytleIndex.hero}>
                 <h1>Bienvenido a Oboe Edits</h1>
                 <p>Tu destino para servicios de edición de alta calidad.</p>
@@ -53,7 +53,7 @@ export function Index  () {
                     </div>
                 </div>
             </section>
-        </main>
+        </div>
     )
 }
 
