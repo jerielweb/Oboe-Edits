@@ -1,52 +1,64 @@
-import Code from './../assets/favicons/codificacion.png'
-import Grafico from './../assets/favicons/diseno-grafico.png'
-import Video from './../assets/favicons/edicion-de-video.png'
-import Archive from './../assets/favicons/editar-archivo.png'
-
 import Service from './../Styles/services.module.css'
+
+import serviceData from './../content/services.content.js';
+
+
+
 export function Services () {
-    return(
-        <>
+    return (
+        <div className={Service.main}>
             <section className={Service.hero}>
-                <h1>Servicios de Oboe Edits</h1>
-                <p>Ofrecemos una variedad de servicios de edición para satisfacer tus necesidades.</p>
+                <h1>Nuestros Servicios</h1>
             </section>
 
-            <section className={Service.Content}>
-                <article className={Service.card}>
-                    <div className={Service.banner_servises}>
-                        <img src={Video}/>
-                        <h2>Edición/Creación de Video</h2>
+        {serviceData.map((serviceData, ServiceList) => (
+            <article className={Service.card} key={ServiceList}>
+            <div className={Service.banner_servises}>
+                    <h2>{serviceData.name}</h2>
+                <div className={Service.card}>
+                    {serviceData.description instanceof Array ? (
+                        serviceData.description.map((desc, index) => (
+                            <p key={index}>{desc}</p>
+                        ))
+                    ) : (
+                        <p>{serviceData.description}</p>
+                    )}
+                </div>
+                <div className={Service.icon}>
+                    <div>
+                        <ul className={Service.list}>
+                            {serviceData.list && serviceData.list.map((item, index) => (
+                                <li key={index}>{item}</li>
+                            ))}
+                        </ul>
                     </div>
-                    <div className={Service.card}>
-                        <p>Transforma tus grabaciones y conteni en videos profesionales, atractivos, dinamicos y de buena calidad.</p>
-                    </div>
-                        <a className={Service.button}>Más Información</a>
-                </article>
-
-                <article className={Service.card}>
-                    <div className={Service.banner_servises}>
-                        <img src={Grafico}/>
-                        <h2>Diseño Grafico</h2>
-                    </div>
-                    <div className={Service.card}>
-                        <p>Transforma tus grabaciones y conteni en videos profesionales, atractivos, dinamicos y de buena calidad.</p>
-                    </div>
-                        <a className={Service.button} href="#popup-content">Más Información</a>
-                </article>
-
-                <article className={Service.card}>
-                    <div className={Service.banner_servises}>
-                        <img src={Code}/>
-                        <h2>Diseño Grafico</h2>
-                    </div>
-                    <div className={Service.card}>
-                        <p>Transforma tus grabaciones y conteni en videos profesionales, atractivos, dinamicos y de buena calidad.</p>
-                    </div>
-                        <a className={Service.button} href="#popup-content">Más Información</a>
-                </article>
-            </section>
-        </>
+                </div>
+            </div>
+            <div className={Service.ejem}>
+                <h2>Ejemplo: {serviceData.example}</h2>
+                <div className={Service.ejemContent}>
+                    {serviceData.type === 'image' && serviceData.image && (<img src={serviceData.image} alt={serviceData.name} />)}
+                    {serviceData.type === 'video' && serviceData.video && (
+                        <iframe
+                        src={serviceData.video}
+                        title={serviceData.name}
+                        width="100%"
+                        height="315px"
+                        frameBorder="0"
+                        allow="autoplay; encrypted-media"
+                        allowFullScreen
+                        />
+                        )}
+                        {/* Puedes agregar más tipos, por ejemplo PDF, audio, etc. */}
+                </div>
+                <div className={Service.button}>
+                    <a className={Service.WhatsAppLink} href={serviceData.link} target="_blank" rel="noopener noreferrer">Pedir Por WhatsApp</a>
+                    <a className={Service.EmailLink} href={serviceData.email} target="_blank" rel="noopener noreferrer">Pedir Por Email</a>
+                </div>
+            </div>
+            </article>
+            ))}
+        </div>
     )
 }
 

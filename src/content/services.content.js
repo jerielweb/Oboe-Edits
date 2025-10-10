@@ -1,0 +1,47 @@
+import graficoImg from '../assets/favicons/diseno-grafico.png';
+import videoDemo from '../assets/favicons/edicion-de-video.png';
+
+const serviceData = [
+  {
+    name: 'Edición/Creación de Video',
+    description: [
+      'Transforma tus grabaciones y contenido en videos profesionales, atractivos, dinámicos y de buena calidad.',
+      'Ya sea que necesites videos para YouTube, redes sociales, presentaciones o cualquier otro propósito, estoy aquí para ayudarte a dar vida a tus ideas con edición experta y creatividad.',
+    ],
+    type: 'video',
+    video: 'https://www.youtube.com/embed/vNbcctIrIZM',
+    email: 'mailto:oboe.edits@hotmail.com?subject=Consulta%20sobre%20Edición%20de%20Video',
+    link: 'https://wa.me/50672370958?text=Hola%2C%20quiero%20saber%20más%20sobre%20el%20servicio%20de%20Edición%20de%20Video.',
+    example: 'Video De Polemica Para YouTube',
+    list: ['Cortes y Montajes', 'Corrección de Color', 'Efectos Visuales', 'Animaciones', 'Incorporación de Música y Sonido', 'Subtítulos y Textos', 'Optimización para Plataformas'],
+  },
+  {
+    name: 'Diseño Gráfico',
+    description: [
+      'Si necesitas piezas gráficas que impacten directamente y eleven tu marca, mi servicio está enfocado en crear diseños profesionales, listos para usar y optimizados para cualquier plataforma.',
+      'Me especializo en el diseño de las herramientas visuales más cruciales para el marketing y la identidad, asegurando que cada pieza comunique tu mensaje de forma clara y atractiva.',
+    ],
+    type: 'image',
+    image: graficoImg,
+    email: 'mailto:oboe.edits@hotmail.com?subject=Consulta%20sobre%20Dise%C3%B1o%20Gr%C3%A1fico&body=Hola%2C%20quiero%20saber%20m%C3%A1s%20sobre%20el%20servicio%20de%20Dise%C3%B1o%20Gr%C3%A1fico.',
+    list: ['Logotipos', 'Banners', 'Flyers', 'Tarjetas de Presentación', 'Infografías', 'Portadas para Redes Sociales', 'Miniaturas para YouTube', 'Posters', 'Material Publicitario', 'Imagenes De Fondo'],
+    link: 'https://wa.me/50672370958?text=Hola%2C%20quiero%20saber%20más%20sobre%20el%20servicio%20de%20Diseño%20Gráfico.'
+  },
+  {
+    name: 'Creación de Sitios Web Básicos',
+    description: [
+      'Me especializo en la creación de sitios web básicos, efectivos y de rápida implementación diseñados para pequeñas empresas, freelancers y proyectos que requieren una carta de presentación digital sólida.',
+      'Un sitio web bien diseñado no solo mejora tu presencia en línea, sino que también aumenta la confianza de tus clientes potenciales y facilita la comunicación de tu propuesta de valor.',
+    ],
+    type: 'image',
+    image: videoDemo
+  },
+  {
+    name: 'Edición de Archivos',
+    description: 'Te puedo ayudar a editar y mejorar tus archivos PDF, Word, Excel y PowerPoint de manera rápida y eficiente.',
+    type: 'image',
+    image: videoDemo
+  },
+];
+
+export default serviceData;

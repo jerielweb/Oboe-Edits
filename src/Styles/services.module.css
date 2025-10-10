@@ -8,24 +8,41 @@
     --header-color: rgba(244, 244, 244, 0.6);
     --navigation-bg-color: rgba(244, 244, 244, 0.884);
     --accent-color: #3498db;
+    --whatsapp-color: #25d366;
+    --email-color: #0072c6;
+    --font-color: #000000;
     --font-primary: 'Montserrat', sans-serif;
     --font-secondary: 'Open Sans', sans-serif;
 }
-main {
-    backdrop-filter: blur(5px);
+.main {
     height: 100%;
     width: 100%;
+    padding-top: 4.1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     padding: 3.5rem 0;
+    min-height: 100vh;
     gap: 2rem;
+}
+.main h1 {
+    font-size: 3.7rem;
+    color: var(--primary-color);
+    font-weight: 700;
+}
+.main p {
+    font-size: 1.2rem;
+    color: var(--primay-color);
+    font-weight: 600;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6rem;
 }
 section.Content {
     width: 100%;
-    max-width: 1500px;
+    position: relative;
     padding: 2rem;
     display: flex;
     flex-wrap: wrap;
@@ -37,74 +54,166 @@ section.Content {
 .banner_servises {
     display: flex;
     width: 100%;
+    height: 100%;
+    max-width: 600px;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    justify-content: space-around;
+    align-items: flex-start;
+    text-align: left;
+    padding: 1rem .5rem;
 }
-.card {
-    text-align: center;
-    font-size: 1.12rem;
+.banner_servises h2 {
+    font-size: 3rem;
+    color: var(--primary-color);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
 }
 article {
     display: flex;
-    width: 350px;
+    width: 1300px;
     height: 630px;
     background-color: var(--tertiary-color);
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 1rem;
-    padding: 2rem;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
     border-radius: 1rem;
+    padding: 1rem 2.4rem;
     box-shadow: #00152bd2 0px 3px 5px;
+    gap: 1rem;
+    text-align: left;
+    font-weight: 600;
 }
 article img {
-    width: 400px;
+    width: 250px;
     height: auto;
+    object-fit: contain;
 }
-article {
+article .card {
     display: flex;
-    gap: 1.3rem;
     flex-direction: column;
-    text-align: left;
     align-items: center;
-    padding: 0 2.4rem ;
+    justify-content: flex-start;
+    height: 100%;
+    gap: 1rem;
+}
+article .card p {
+    display: flex;
+    align-items: flex-start;
+    font-size: 1.1rem;
     font-weight: 600;
-}
-article .decription .button {
-    text-align: center;
-    padding: 9px 15px;
-    color: var(--tertiary-color);
-    background-color: #000f4f;
-    border-radius: 99px;
-    cursor: pointer;
-
-    transition: color 100ms linear,
-    background-color 100ms linear;
-}
-article .button:hover {
-    background-color: var(--accent-color);
     color: var(--primary-color);
+    width: fit-content;
+    max-width: 580px;
+    height: fit-content;
+    text-align: left;
+    text-wrap: balance;
+}
+.list {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    color: var(--primary-color);
+    font-weight: 600;
+    line-height: 1.5rem;
+    max-height: 300px;
+    place-content: center;
+    gap: 0.4rem;
+}
+.list li {
+    list-style: inside;
+    display: list-item;
+    place-content: center;
+    text-align: left;
+    list-style-type: disc;
+}
+article .ejem {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.1rem;
+    color: var(--primary-color);
+    justify-content: space-around;
+    font-weight: 600;
+    margin-top: 1rem;
+    text-align: left;
+    height: 100%;
+    width: 600px;
+    line-height: 1.5rem;
 }
 .button {
-    margin: 5px;
-    box-sizing: border-box;
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 5px 10px;
+}
+.WhatsAppLink {
+    color: var(--font-color);
     text-decoration: none;
-    list-style: none;
-    font-weight: 600;
-    font-size: 1.1rem;
-    scroll-behavior: smooth;
-    scrollbar-width: none;
-    height: auto;
-    border: none;
-    text-align: center;
-    padding: 9px 15px;
+    width: fit-content;
+    background-color: var(--whatsapp-color);
+    padding: 5px 10px;
+    border-radius: 25px;
+    transition: background-color 100ms ease;
+}
+.WhatsAppLink:hover {
+    color: #000000;
+    background-color: #1ebe5d;
+}
+.EmailLink {
     color: var(--tertiary-color);
-    background-color: #000f4f;
-    border-radius: 99px;
-    cursor: pointer;
-    transition: color 100ms linear,
-    background-color 100ms linear;
+    text-decoration: none;
+    width: fit-content;
+    background-color: var(--email-color);
+    padding: 5px 10px;
+    border-radius: 25px;
+    transition: background-color 100ms ease;
+}
+.EmailLink:hover {
+    color: var(--tertiary-color);
+    background-color: #005a9e;
+}
+[allowfullscreen] {
+    border: none;
+    border-radius: 1rem;
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+    margin-top: 1rem;
 }
 /* Responsive Styles */
+@media (max-width: 768px) {
+    .main h1 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    font-weight: 700;
+    }
+    article {
+        width: 93%;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+    article .card p {
+        height: auto;
+        text-align: left;
+    }
+    article .ejem {
+        width: 100%;
+        height: auto;
+        text-align: left;
+    }
+    .banner_servises h2 {
+        font-size: 2rem;
+        text-align: center;
+        width: 100%;
+    }
+    .button a {
+        font-size: 0.9rem;
+        padding: 5px 8px;
+    }
+    
+}
