@@ -11,11 +11,11 @@
     --font-primary: 'Montserrat', sans-serif;
     --font-secondary: 'Open Sans', sans-serif;
 }
-main {
+.main {
     padding: 0;
     margin: 0;
 }
-main .hero {
+.main .hero {
     text-wrap: balance;
     display: flex;
     position: relative;
@@ -29,20 +29,20 @@ main .hero {
     height: auto;
     min-height: 100dvh;
 }
-main .hero h1 {
+.main .hero h1 {
     font-family: var(--font-primary);
     font-size: 6rem;
     color: var(--primary-color);
     margin-bottom: 1rem;
 }
-main .hero p {
+.main .hero p {
     font-family: var(--font-secondary);
     font-size: 3rem;
     font-weight: 700;
     color: var(--quaternary-color);
     max-width: 750px;
 }
-main .hero p:nth-child(3) {
+.main .hero p:nth-child(3) {
     font-size: 1.5rem;
     margin-top: 1rem;
     font-weight: 600;
@@ -198,14 +198,14 @@ main .hero p:nth-child(3) {
         flex-direction: column;
         align-items: center;
     }
-    main .hero h1 {
+    .main .hero h1 {
         font-size: 3rem;
         text-wrap: balance;
     }
-    main .hero p {
+    .main .hero p {
         font-size: 2rem;
     }
-    main .hero p:nth-child(3) {
+    .main .hero p:nth-child(3) {
         font-size: 1.2rem;
     }
     .buttonIndex {
