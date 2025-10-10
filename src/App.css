@@ -11,7 +11,7 @@
 }
 :root {
     --bg-image: url('../assets/img/background.png');
-    --bg-image-mobile: url('/assets/img/background-mobile.webp');
+    --bg-image-mobile: url('../assets/img/background-mobile.webp');
     --primary-color: #00152b;
     --secondary-color: #025e94;
     --tertiary-color: #ffffff;
