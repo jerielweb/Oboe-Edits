@@ -11,6 +11,7 @@
 }
 :root {
     --bg-image: url('../assets/img/background.png');
+    --bg-image-mobile: url('../assets/img/background-mobile.webp');
     --primary-color: #00152b;
     --secondary-color: #025e94;
     --tertiary-color: #ffffff;
@@ -25,7 +26,7 @@ body {
     background-image: var(--bg-image);
     font-family: var(--font-secondary);
     background-color: var(--tertiary-color);
-    background-attachment: scroll;
+    background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -179,8 +180,30 @@ footer .footer-links {
     display: flex;
 }
 /* Responsive Styles */
-@media (max-width: 768px) {
+/* Tablet */
+@media (mim-width: 768px) and (max-width: 1024px) {
     body {
+        background-image: var(--bg-image-mobile);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+    main {
+        text-wrap: balance;
+        padding-top: 1.5rem;
+    }
+    main .hero h1 {
+        font-size: 3rem;
+    }
+    main .hero p {
+        font-size: 1.5rem;
+    } 
+}
+/* Mobile */
+@media (max-width: 480px) {
+    body {
+        background-image: var(--bg-image-mobile);
+        background-size: cover;
         background-attachment: fixed;
     }
     .navigation {
@@ -235,5 +258,8 @@ footer .footer-links {
     }
     .nav-links a::before {
         display: none;
+    }
+    .footer {
+        font-size: 0.8rem;
     }
 }

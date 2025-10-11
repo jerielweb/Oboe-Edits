@@ -31,25 +31,21 @@ export function Index  () {
                 <div className={stytleIndex.servicesContainer}>
                     <div className={stytleIndex.servicesCard}>
                         <img src={Video} alt="Edición/Creación de Audio"/>
-                        <h3>Edición/Creación de Video</h3>
-                        <p>Transforma tus grabaciones en videos profesionales y atractivos.</p>
+                        <h3>Edición de Videos</h3>
                     </div>
 
                     <div className={stytleIndex.servicesCard}>
                         <img src={Archive} alt="Edición/Creación De Documentos"/>
                         <h3>Edición/Creación De Documentos</h3>
-                        <p>Transforma tus documentos en versiones pulidas y profesionales.</p>
                     </div>
 
                     <div className={stytleIndex.servicesCard}>
                         <img src={Grafico} alt="diseno-grafico"/>
                         <h3>Diseño Grafico</h3>
-                        <p>Te ayudaremos a mejorar o crear cualquier tipo de imagen para tu negocio o perfil</p>
                     </div>
                     <div className={stytleIndex.servicesCard}>
                         <img src={Code} alt="Creación de Sitios Web Básicos" />
                         <h3>Creación de Sitios Web Básicos</h3>
-                        <p>Transforma tus grabaciones de audio en producciones profesionales y claras.</p>
                     </div>
                 </div>
             </section>

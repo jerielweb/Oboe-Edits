@@ -1,9 +1,5 @@
 import Service from './../Styles/services.module.css'
-
 import serviceData from './../content/services.content.js';
-
-
-
 export function Services () {
     return (
         <div className={Service.main}>
@@ -35,16 +31,13 @@ export function Services () {
                 </div>
             </div>
             <div className={Service.ejem}>
-                <h2>Ejemplo: {serviceData.example}</h2>
+                <h2>Ejemplo:<br />{serviceData.example}</h2>
                 <div className={Service.ejemContent}>
                     {serviceData.type === 'image' && serviceData.image && (<img src={serviceData.image} alt={serviceData.name} />)}
                     {serviceData.type === 'video' && serviceData.video && (
                         <iframe
                         src={serviceData.video}
                         title={serviceData.name}
-                        width="100%"
-                        height="315px"
-                        frameBorder="0"
                         allow="autoplay; encrypted-media"
                         allowFullScreen
                         />

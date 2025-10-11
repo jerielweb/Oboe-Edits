@@ -1,4 +1,4 @@
-import graficoImg from '../assets/favicons/diseno-grafico.png';
+import graficoImg from '../assets/content/diseño.png';
 import videoDemo from '../assets/favicons/edicion-de-video.png';
 
 const serviceData = [
@@ -25,7 +25,8 @@ const serviceData = [
     image: graficoImg,
     email: 'mailto:oboe.edits@hotmail.com?subject=Consulta%20sobre%20Dise%C3%B1o%20Gr%C3%A1fico&body=Hola%2C%20quiero%20saber%20m%C3%A1s%20sobre%20el%20servicio%20de%20Dise%C3%B1o%20Gr%C3%A1fico.',
     list: ['Logotipos', 'Banners', 'Flyers', 'Tarjetas de Presentación', 'Infografías', 'Portadas para Redes Sociales', 'Miniaturas para YouTube', 'Posters', 'Material Publicitario', 'Imagenes De Fondo'],
-    link: 'https://wa.me/50672370958?text=Hola%2C%20quiero%20saber%20más%20sobre%20el%20servicio%20de%20Diseño%20Gráfico.'
+    link: 'https://wa.me/50672370958?text=Hola%2C%20quiero%20saber%20más%20sobre%20el%20servicio%20de%20Diseño%20Gráfico.',
+    example: 'Banner Publicitario Para Redes Sociales',
   },
   {
     name: 'Creación de Sitios Web Básicos',

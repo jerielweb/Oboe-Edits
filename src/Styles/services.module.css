@@ -1,6 +1,6 @@
 :root {
     --bg-image: url('../assets/img/background.png');
-    --bg-image-mobile: url('/assets/img/background-mobile.png');
+    --bg-image-mobile: url('../assets/img/background-mobile.webp');
     --primary-color: #00152b;
     --secondary-color: #025e94;
     --tertiary-color: #ffffff;
@@ -28,7 +28,7 @@
     gap: 2rem;
 }
 .main h1 {
-    font-size: 3.7rem;
+    font-size: 3.5vw;
     color: var(--primary-color);
     font-weight: 700;
 }
@@ -63,14 +63,15 @@ section.Content {
     padding: 1rem .5rem;
 }
 .banner_servises h2 {
-    font-size: 3rem;
+    font-size: 3vw;
     color: var(--primary-color);
     font-weight: 700;
     margin-bottom: 0.5rem;
 }
 article {
     display: flex;
-    width: 1300px;
+    max-width: 1300px;
+    width: 95vw;
     height: 630px;
     background-color: var(--tertiary-color);
     flex-direction: row;
@@ -84,9 +85,12 @@ article {
     font-weight: 600;
 }
 article img {
-    width: 250px;
-    height: auto;
-    object-fit: contain;
+    border: var(--secondary-color) 2px solid;
+    border-radius: 1rem;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
 }
 article .card {
     display: flex;
@@ -152,6 +156,7 @@ article .ejem {
 .WhatsAppLink {
     color: var(--font-color);
     text-decoration: none;
+    text-align: center;
     width: fit-content;
     background-color: var(--whatsapp-color);
     padding: 5px 10px;
@@ -165,6 +170,7 @@ article .ejem {
 .EmailLink {
     color: var(--tertiary-color);
     text-decoration: none;
+    text-align: center;
     width: fit-content;
     background-color: var(--email-color);
     padding: 5px 10px;
@@ -176,12 +182,20 @@ article .ejem {
     background-color: #005a9e;
 }
 [allowfullscreen] {
-    border: none;
+    border: 2px solid var(--secondary-color);
     border-radius: 1rem;
-    width: 100%;
     max-width: 560px;
-    height: 315px;
     margin-top: 1rem;
+    width: 100%;
+    height: 315px;
+    aspect-ratio:  16 / 9;
+}
+.ejem h2 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    line-height: 2rem;
 }
 /* Responsive Styles */
 @media (max-width: 768px) {
@@ -192,10 +206,14 @@ article .ejem {
     }
     article {
         width: 93%;
-        height: auto;
+        height: 100%;
         flex-direction: column;
-        align-items: center;
         padding: 1rem;
+    }
+    article img {
+        width: 400px;
+        height: auto;
+        margin-top: 1rem;
     }
     article .card p {
         height: auto;
@@ -204,6 +222,7 @@ article .ejem {
     article .ejem {
         width: 100%;
         height: auto;
+        align-items: center;
         text-align: left;
     }
     .banner_servises h2 {
@@ -214,6 +233,9 @@ article .ejem {
     .button a {
         font-size: 0.9rem;
         padding: 5px 8px;
+    }
+    .list li {
+        font-size: 1rem;
     }
     
 }
