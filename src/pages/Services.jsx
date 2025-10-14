@@ -1,3 +1,4 @@
+
 import Service from './../Styles/services.module.css'
 import serviceData from './../content/services.content.js';
 export function Services () {
@@ -7,46 +8,59 @@ export function Services () {
                 <h1>Nuestros Servicios</h1>
             </section>
 
-        {serviceData.map((serviceData, ServiceList) => (
-            <article className={Service.card} key={ServiceList}>
+        {serviceData.map((service, index) => (
+            <article className={Service.card} key={index}>
             <div className={Service.banner_servises}>
-                    <h2>{serviceData.name}</h2>
+                    <h2>{service.name}</h2>
                 <div className={Service.card}>
-                    {serviceData.description instanceof Array ? (
-                        serviceData.description.map((desc, index) => (
-                            <p key={index}>{desc}</p>
+                    {service.description instanceof Array ? (
+                        service.description.map((desc, i) => (
+                            <p key={i}>{desc}</p>
                         ))
                     ) : (
-                        <p>{serviceData.description}</p>
+                        <p>{service.description}</p>
                     )}
                 </div>
                 <div className={Service.icon}>
                     <div>
                         <ul className={Service.list}>
-                            {serviceData.list && serviceData.list.map((item, index) => (
-                                <li key={index}>{item}</li>
+                            {service.list && service.list.map((item, i) => (
+                                <li key={i}>{item}</li>
                             ))}
                         </ul>
                     </div>
                 </div>
             </div>
             <div className={Service.ejem}>
-                <h2>Ejemplo:<br />{serviceData.example}</h2>
+                <h2>Ejemplo:<br />{service.example}</h2>
                 <div className={Service.ejemContent}>
-                    {serviceData.type === 'image' && serviceData.image && (<img src={serviceData.image} alt={serviceData.name} />)}
-                    {serviceData.type === 'video' && serviceData.video && (
+                    {service.type === 'image' && service.image && (<img src={service.image} alt={service.name} />)}
+                    {service.type === 'video' && service.video && (
                         <iframe
-                        src={serviceData.video}
-                        title={serviceData.name}
+                        src={service.video}
+                        title={service.name}
                         allow="autoplay; encrypted-media"
                         allowFullScreen
                         />
                         )}
-                        {/* Puedes agregar más tipos, por ejemplo PDF, audio, etc. */}
+                        {service.type === 'PDF' && service.Document && (
+                            <div className={Service.pdfPreview}>
+                                <iframe
+                                    src={service.Document}
+                                    title={service.name}
+                                    width="100%"
+                                    height="500"
+                                    className={Service.file}
+                                />
+                                <div>
+                                    <a href={service.Document} target="_blank" rel="noopener noreferrer">Abrir PDF en nueva pestaña</a>
+                                </div>
+                            </div>
+                        )}
                 </div>
                 <div className={Service.button}>
-                    <a className={Service.WhatsAppLink} href={serviceData.link} target="_blank" rel="noopener noreferrer">Pedir Por WhatsApp</a>
-                    <a className={Service.EmailLink} href={serviceData.email} target="_blank" rel="noopener noreferrer">Pedir Por Email</a>
+                    <a className={Service.WhatsAppLink} href={service.link} target="_blank" rel="noopener noreferrer">Pedir Por WhatsApp</a>
+                    <a className={Service.EmailLink} href={service.email} target="_blank" rel="noopener noreferrer">Pedir Por Email</a>
                 </div>
             </div>
             </article>

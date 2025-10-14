@@ -13,12 +13,12 @@ export function Index  () {
                 <p>Transformamos tu contenido en algo extraordinario.</p>
 
                 <div className={stytleIndex.buttonIndex}>
-                    <a href="about.html" className={stytleIndex.learnButton}>Saber Más</a>
-                    <a href="services.html" className={stytleIndex.startButton}>Haz Tu Pedido</a>
+                    <a href="#about" className={stytleIndex.learnButton}>Saber Más</a>
+                    <a href="/services" className={stytleIndex.startButton}>Haz Tu Pedido</a>
                 </div>
             </section>
 
-            <section className={stytleIndex.about}>
+            <section className={stytleIndex.about} id='about'>
                 <h2>Acerca de Oboe Edits</h2>
                 <p>En Oboe Edits, nos especializamos en ofrecer servicios de edición de alta calidad para ayudar a nuestros clientes a transformar su contenido. Nuestro equipo de editores expertos está comprometido a proporcionar resultados excepcionales que superen las expectativas.</p>
             </section>
