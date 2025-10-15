@@ -1,9 +1,11 @@
-import stytleIndex from './../Styles/index.module.css'
 import Code from './../assets/favicons/codificacion.png'
 import Grafico from './../assets/favicons/diseno-grafico.png'
 import Video from './../assets/favicons/edicion-de-video.png'
 import Archive from './../assets/favicons/editar-archivo.png'
 
+
+
+import stytleIndex from './../Styles/index.module.css'
 export function Index  () {
     return (
         <div className={stytleIndex.main}>
