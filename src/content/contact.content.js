@@ -1,9 +1,8 @@
-const Contact = [
+export const Contact = [
     {
-    title: 'Bienvenido a Oboe Edits',
-    subtitle: 'Tu destino para servicios de edición de alta calidad.',
-    desc: 'Transformamos tu contenido en algo extraordinario.',
-    btn1: 'SABER MÁS',
-    btn2: 'HAZ TU PEDIDO',
-    }
+        name: 'Mandar Mensaje',
+        number: 'wa.me/50672370958'
+    },
 ]
+
+export default Contact

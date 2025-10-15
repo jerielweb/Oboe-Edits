@@ -10,6 +10,7 @@ import { Services } from './pages/Services.jsx'
 // Pages
 import HeadersApp from './components/Header.jsx'
 import Index from './pages/Index.jsx'
+import Contact from './pages/Contact.jsx';
 
 
 createRoot(document.getElementById('root')).render(
@@ -20,6 +21,7 @@ createRoot(document.getElementById('root')).render(
                     <Routes>
                         <Route path='/' element={<Index />} />
                         <Route path='/Services' element={<Services />} />
+                        <Route path='/Contact' element={<Contact />} />
                     </Routes>
                 </main>
             <Footer />

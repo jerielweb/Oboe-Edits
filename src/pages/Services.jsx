@@ -1,6 +1,7 @@
-
 import Service from './../Styles/services.module.css'
-import serviceData from './../content/services.content.js';
+import serviceData from './../content/services.content.js'
+
+
 export function Services () {
     return (
         <div className={Service.main}>
