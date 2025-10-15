@@ -10,7 +10,7 @@ export function Contact () {
                         <h2>{contact.name}</h2>
                     </div>
                     <div>
-                        <a href={contact.number}>WhatSapp</a>
+                        <a href={contact.number}>WhatsApp</a>
                     </div>
                 </article>
             )}
