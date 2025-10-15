@@ -3,18 +3,18 @@ import contactData from './../content/contact.content.js'
 
 export function Contact () {
     return (
-        <div>
+        <section>
             {contactData.map((contact, index) =>
-                <article key={index}>
+                <div key={index}>
                     <div>
                         <h2>{contact.name}</h2>
                     </div>
                     <div>
-                        <a href={contact.number}>WhatSapp</a>
+                        <a href={contact.number}>WhatsApp</a>
                     </div>
-                </article>
+                </div>
             )}
-        </div>
+        </section>
     )
 }
 export default Contact

@@ -29,7 +29,6 @@ export function HeadersApp () {
             <a className="logo" href="/">
                 <img src={logoindex} alt="Oboe Edits Logo" /><span id="beta">Beta</span>
             </a>
-            <div className={`overlay ${isOpen ? 'active': ''}`} onClick={closeNav}></div>
             <nav className={`navigation ${isOpen ? 'active': ''}`}>
                     <button className='NavBtn' onClick={closeNav}>
                         <Close />
@@ -41,6 +40,7 @@ export function HeadersApp () {
                     <NavLink to="/about" className={getNavLinkClass} onClick={closeNav}>Blog</NavLink>
                 </aside>
             </nav>
+            <div className={`overlay ${isOpen ? 'active': ''}`} onClick={closeNav}></div>
             <div className="menu-icon" onClick={closeNav}>
                 <span className="bar" onClick={closeNav}></span>
                 <span className="bar" onClick={closeNav}></span>
