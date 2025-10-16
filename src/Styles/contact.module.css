@@ -1,0 +1,70 @@
+:root {
+    --bg-image: url('../assets/img/background.png');
+    --bg-image-mobile: url('../assets/img/background-mobile.webp');
+    --primary-color: #00152b;
+    --secondary-color: #050e94;
+    --tertiary-color: #ffffff;
+    --quaternary-color: #000f4f;
+    --header-color: rgba(244, 244, 244, 0.6);
+    --navigation-bg-color: rgba(244, 244, 244, 0.884);
+    --accent-color: #3498db;
+    --font-primary: 'Montserrat', sans-serif;
+    --font-secondary: 'Open Sans', sans-serif;
+}
+div .ContactCard div a svg {
+    aspect-ratio: 1 / 1;
+    height: 40px;
+    width: 40px;
+}
+.ContactContent {
+    position: relative;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100%;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.ContactCard {
+    display: flex;
+    flex-direction: column;
+    width:  min(400px, 90vw);
+    height: fit-content;
+    background-color: var(--tertiary-color);
+    border-radius: 15px;
+    place-content: center;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    margin: 1rem 0;
+    gap: 2rem;
+}
+.ContactCard h2 {
+    width: 100%;
+    text-align: center;
+}
+.ContactCard a {
+    display: flex;
+    place-content: center;
+    place-items: center;
+    border: var(--quaternary-color) 2px solid;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 10px;
+    transition: transform 100ms ease;
+}
+.ContactCard a:hover {
+    transform: scale(1.1);
+}
+.ContactCard .links {
+    display: flex;
+    place-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 1rem;
+}

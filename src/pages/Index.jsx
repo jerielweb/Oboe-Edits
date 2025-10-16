@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom'
 import Code from './../assets/favicons/codificacion.png'
 import Grafico from './../assets/favicons/diseno-grafico.png'
 import Video from './../assets/favicons/edicion-de-video.png'
@@ -16,7 +17,7 @@ export function Index  () {
 
                 <div className={stytleIndex.buttonIndex}>
                     <a href="#about" className={stytleIndex.learnButton}>Saber Más</a>
-                    <a href="/services" className={stytleIndex.startButton}>Haz Tu Pedido</a>
+                    <NavLink to="/services" className={stytleIndex.startButton}>Haz Tu Pedido</NavLink>
                 </div>
             </section>
 
