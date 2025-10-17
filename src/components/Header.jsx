@@ -7,14 +7,14 @@ export function HeadersApp () {
     const [scrolled, setScrolled] = useState(false);
     useEffect(() => {
         const handleScroll = () => {
-            const isScrolled = window.scrollY > 100;
+            const isScrolled = window.scrollY > 25
             if (isScrolled !== scrolled) {
                 setScrolled(isScrolled);
             }
         }
-        window.addEventListener('scroll', handleScroll);
+        window.addEventListener('scroll', handleScroll)
         return () => {
-            window.removeEventListener('scroll', handleScroll);
+            window.removeEventListener('scroll', handleScroll)
         }
     }, [scrolled])
     const headerClass = scrolled ? 'header scroll-header' : 'header'

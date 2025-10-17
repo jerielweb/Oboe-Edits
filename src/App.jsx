@@ -10,14 +10,14 @@ import { Services } from './pages/Services.jsx'
 // Pages
 import HeadersApp from './components/Header.jsx'
 import Index from './pages/Index.jsx'
-import Contact from './pages/Contact.jsx';
+import Contact from './pages/Contact.jsx'
 
 
 createRoot(document.getElementById('root')).render(
     <StrictMode>
         <BrowserRouter>
             <HeadersApp />
-                <main>
+                <main loading='lazy'>
                     <Routes>
                         <Route path='/' element={<Index />} />
                         <Route path='/Services' element={<Services />} />
