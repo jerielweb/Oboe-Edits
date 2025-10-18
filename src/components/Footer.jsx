@@ -9,7 +9,7 @@ export function Footer () {
             <NavLink to="/">Inicio</NavLink>
             <NavLink to="/services">Servicios</NavLink>
             <NavLink to="/contact">Contacto</NavLink>
-            <NavLink to="/about">Acerca de</NavLink>
+            <NavLink to="/blog">Blog</NavLink>
         </div>
     </footer>
     )

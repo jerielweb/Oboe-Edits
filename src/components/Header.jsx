@@ -37,7 +37,7 @@ export function HeadersApp () {
                     <NavLink to="/" className={getNavLinkClass} onClick={closeNav} end>Inicio</NavLink>
                     <NavLink to="/services" className={getNavLinkClass} onClick={closeNav}>Servicios</NavLink>
                     <NavLink to="/contact" className={getNavLinkClass} onClick={closeNav}>Contacto</NavLink>
-                    <NavLink to="/about" className={getNavLinkClass} onClick={closeNav}>Blog</NavLink>
+                    <NavLink to="/blog" className={getNavLinkClass} onClick={closeNav}>Blog</NavLink>
                 </aside>
             </nav>
             <div className={`overlay ${isOpen ? 'active': ''}`} onClick={closeNav}></div>

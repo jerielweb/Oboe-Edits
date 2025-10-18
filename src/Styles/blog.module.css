@@ -1,0 +1,58 @@
+.container {
+    position: relative;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    height: 100%;
+    padding: 0 1rem 3rem;
+    min-height: 91.6dvh;
+}
+.container h1 {
+    text-align: center;
+}
+.card div {
+    max-width: 450px;
+    gap: 2rem;
+}
+.card div h3 {
+    padding-bottom: 1rem;
+}
+.card {
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex-wrap: wrap;
+    width: min(1200px, 90%);
+    min-height: 600px;
+    padding: 2rem 1rem;
+    gap: 10px;
+}
+.frame {
+    border: 2px solid var(--secondary-color);
+    border-radius: 1rem;
+    max-width: 560px;
+    margin-top: 1rem;
+    width: 100%;
+    height: 315px;
+    aspect-ratio:  16 / 9;
+}
+.img {
+    border: var(--secondary-color) 2px solid;
+    border-radius: 1rem;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+@media (max-width: 600px) {
+    .card {
+        flex-direction: column;
+    }
+}
+/*Tablet*/
+/*
+<iframe width="1332" height="749" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Rick Astley - Never Gonna Give You Up (Official Video) (4K Remaster)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+*/

@@ -5,12 +5,13 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 // Components
 import { Footer } from './components/Footer.jsx'
-import { Services } from './pages/Services.jsx'
+import { HeadersApp }from './components/Header.jsx'
 
 // Pages
-import HeadersApp from './components/Header.jsx'
 import Index from './pages/Index.jsx'
 import Contact from './pages/Contact.jsx'
+import Services  from './pages/Services.jsx'
+import Blog from './pages/Blog.jsx';
 
 
 createRoot(document.getElementById('root')).render(
@@ -22,6 +23,7 @@ createRoot(document.getElementById('root')).render(
                         <Route path='/' element={<Index />} />
                         <Route path='/Services' element={<Services />} />
                         <Route path='/Contact' element={<Contact />} />
+                        <Route path='/Blog' element={<Blog />} />
                     </Routes>
                 </main>
             <Footer />

@@ -6,7 +6,6 @@
     text-decoration: none;
     list-style: none;
     scroll-behavior: smooth;
-    scrollbar-width: thin;
     height: auto;
 }
 :root {
@@ -38,6 +37,17 @@ body {
     margin: 0;
     padding: 0;
 }
+body::-webkit-scrollbar {
+    width: 8px;
+}
+body::-webkit-scrollbar-thumb {
+    background: var(--accent-color);
+    border-radius: 15px;
+}
+body::-webkit-scrollbar-track {
+    background: var(--header-color);
+    padding: 1rem;
+}
 img {
     max-width: 100%;
     height: auto;
@@ -48,8 +58,8 @@ img {
 }
 main {
     backdrop-filter: blur(5px);
-    top: 4rem;
-    padding-top: 4.1rem;
+    position: static;
+    padding-top: 4rem !important;
     height: 100%;
     width: 100%;
     min-width: 99dvw;
@@ -164,7 +174,6 @@ header .logo img {
     border-radius: 25px;
 }
 footer {
-    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -184,6 +193,8 @@ footer .footer-links {
     gap: 5px;
     display: flex;
 }
+/* Para navegadores Chrome, Edge, Safari */
+
 /* Responsive Styles */
 /* Tablet */
 @media (mim-width: 768px) and (max-width: 1024px) {

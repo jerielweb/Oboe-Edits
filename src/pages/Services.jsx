@@ -23,13 +23,13 @@ export function Services () {
                     )}
                 </div>
                 <div className={Service.icon}>
-                    <div>
-                        <ul className={Service.list}>
-                            {service.list && service.list.map((item, i) => (
-                                <li key={i}>{item}</li>
-                            ))}
-                        </ul>
-                    </div>
+                <div>
+                    <ul className={Service.list}>
+                        {service.list && service.list.map((item, i) => (
+                            <li key={i}>{item}</li>
+                        ))}
+                    </ul>
+                </div>
                 </div>
             </div>
             <div className={Service.ejem}>
