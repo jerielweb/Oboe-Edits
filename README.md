@@ -1,16 +1,43 @@
-# React + Vite
+# 🎵 Oboe Edits | Servicios de Edición Profesional de Alta Calidad
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🚀 Bienvenido a Oboe Edits
 
-Currently, two official plugins are available:
+**Oboe Edits** es tu destino para servicios de edición profesional que transforman contenido ordinario en resultados extraordinarios. Estamos comprometidos a ofrecer servicios de alta calidad con un equipo de editores expertos dedicados a superar las expectativas del cliente.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+El sitio web sirve como el portal principal para conocer nuestros servicios, contactar al equipo y realizar pedidos.
 
-## React Compiler
+## ✨ Servicios Ofrecidos
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+Nos especializamos en una variedad de áreas creativas y técnicas para satisfacer todas tus necesidades de edición y creación de contenido.
 
-## Expanding the ESLint configuration
+| Categoría | Descripción |
+| :--- | :--- |
+| 🎧 **Edición y Creación de Audio** | Limpieza, mezcla, masterización y creación de contenido de audio. |
+| 🎬 **Edición de Videos** | Montaje, postproducción, corrección de color y efectos visuales para videos. |
+| 📝 **Edición y Creación de Documentos** | Revisión, formato y creación de documentos profesionales, informes y textos. |
+| 🎨 **Diseño Gráfico** | Creación de logotipos, material de marketing, banners y otros activos visuales. |
+| 🌐 **Creación de Sitios Web Básicos** | Desarrollo de páginas web sencillas y funcionales (generalmente de tipo *landing page* o informativas). |
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 💡 Acerca del Proyecto
+
+El objetivo de este proyecto es tener una presencia digital profesional y moderna para la marca **Oboe Edits**, facilitando a los clientes el acceso a la información de los servicios y permitiendo una vía de contacto y pedido eficiente.
+
+## 🛠️ Tecnologías del Sitio Web
+
+Aunque el código fuente exacto puede variar, la implementación actual del sitio web sugiere el uso de tecnologías modernas de desarrollo web front-end.
+
+* **Front-end:** HTML, CSS, JavaScript (posiblemente un *framework* como React, Vue o Next.js).
+* **Alojamiento:** Vercel.
+* **Estilismo:** Diseño *responsive* para una visualización óptima en cualquier dispositivo.
+
+## 📞 Contacto y Pedidos
+
+Si tienes preguntas o deseas realizar un pedido, puedes visitar las siguientes secciones del sitio:
+
+* **Página Principal:** [https://oboe-edits.vercel.app/](https://oboe-edits.vercel.app/)
+* **Servicios:** Conoce los detalles de cada oferta.
+* **Contacto:** Encuentra el formulario de contacto para comunicarte directamente.
+* **Haz Tu Pedido:** Acceso directo para comenzar tu proyecto.
+
+---
+**© 2025 Oboe Edits. Todos los derechos reservados.**
