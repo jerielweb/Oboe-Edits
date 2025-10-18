@@ -26,7 +26,7 @@ El objetivo de este proyecto es tener una presencia digital profesional y modern
 
 Aunque el código fuente exacto puede variar, la implementación actual del sitio web sugiere el uso de tecnologías modernas de desarrollo web front-end.
 
-* **Front-end:** HTML, CSS, JavaScript (posiblemente un *framework* como React, Vue o Next.js).
+* **Front-end:** HTML, CSS, JavaScript (posiblemente un *framework* como React, Vue, Next.js O Astro).
 * **Alojamiento:** Vercel.
 * **Estilismo:** Diseño *responsive* para una visualización óptima en cualquier dispositivo.
 
