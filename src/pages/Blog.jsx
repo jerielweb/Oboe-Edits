@@ -21,6 +21,7 @@ export function Blog () {
                         )}
                         </div>
                         <div>
+                            <p className={blogStyle.titleList}>Temas tratados:</p>
                             <ul className={blogStyle.list}>
                                 {blog.list && blog.list.map((item, i) => (
                                     <li key={i}>{item}</li>
@@ -28,9 +29,9 @@ export function Blog () {
                             </ul>
                         </div>
                     </div>
-                    <div>
+                    <div className={blogStyle.media}>
                         <h3>{blog.result}</h3>
-                        <div key={index}>
+                        <div key={index} className={blogStyle.media}>
                             {blog.type === 'image' && blog.image && (
                                 <>
                                     <img
@@ -50,7 +51,7 @@ export function Blog () {
                                         allow="autoplay; encrypted-media"
                                         allowFullScreen
                                     />
-                                    {blog.button && (<a href={blog.button}>Ver el video</a>)}
+                                    {blog.button && (<a href={blog.button} className={blogStyle.button}>Ver el video</a>)}
                                 </>
                             )}
                         </div>

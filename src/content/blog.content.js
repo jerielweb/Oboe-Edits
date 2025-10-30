@@ -1,32 +1,20 @@
-
-import example from './../assets/img/background.png'
-
 const blogData = [
     {
         type: 'video',
-        name: 'Titulo',
-        description: ['Parrafo 1',
-            'Parrafo 2', 'Parrafo 3'
+        name: 'Cosas Que No Me gustan De Brawl Stars',
+        description: ['En este video te muestro las cosas que no me gustan de Brawl Stars y que podrian mejorar para que el juego sea mas divertido y entretenido.',
         ],
-        list: ['Lista 1',
-            'Lista 2', 'Lista 3'
-        ],
-        result: 'Aqui Puedes ver el resultado',
-        button: '',
-        video: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-    },
-    {
-        type: 'image',
-        name: 'Titulo',
-        description: ['Parrafo 1',
-            'Parrafo 2', 'Parrafo 3'
-        ],
-        list: ['Lista 4',
-            'Lista 5', 'Lista 6'
+        list: [
+            'Jugabilidad',
+            'Gráficos',
+            'Sonido',
+            'Comunidad',
+            'Actualizaciones',
+            'Opiniones Personales',
         ],
         result: 'Aqui Puedes ver el resultado',
-        button: '',
-        image: example,
+        button: 'https://www.youtube.com/shorts/_iq8DM_TEB8',
+        video: 'https://player.vimeo.com/video/1131929081?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479',
     },
 ]
 

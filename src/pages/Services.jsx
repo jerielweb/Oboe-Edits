@@ -8,7 +8,6 @@ export function Services () {
             <section className={Service.hero}>
                 <h1>Nuestros Servicios</h1>
             </section>
-
         {serviceData.map((service, index) => (
             <article className={Service.card} key={index}>
             <div className={Service.banner_servises}>
