@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import contactData from './../content/contact.content.js'
 import contactStyle from './../Styles/contact.module.css'
 
@@ -29,6 +30,19 @@ const EnlaceIcono = ({ href, IconoComponente }) => {
     );
 };
 export function Contact () {
+
+    useEffect(() => {
+        document.title = 'Oboe Edits | Contacto';
+        const description = 'Contacto | Oboe Edits. Encuentra nuestras vías de contacto: WhatsApp, Telegram, email y redes sociales para solicitar servicio de edición.';
+        let meta = document.querySelector('meta[name="description"]');
+        if (meta) meta.setAttribute('content', description);
+        else {
+            meta = document.createElement('meta');
+            meta.name = 'description';
+            meta.content = description;
+            document.head.appendChild(meta);
+        }
+    }, [])
     return (
         <div className={contactStyle.ContactContent}>
             <div>

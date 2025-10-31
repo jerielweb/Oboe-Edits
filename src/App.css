@@ -91,6 +91,7 @@ header.scroll-header {
 }
 a, a:visited {
     color: inherit;
+    transition: color 100ms ease;
 }
 a:hover {
     color: var(--accent-color);

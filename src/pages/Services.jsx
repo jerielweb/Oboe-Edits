@@ -1,8 +1,21 @@
+import { useEffect } from 'react'
 import Service from './../Styles/services.module.css'
 import serviceData from './../content/services.content.js'
 
-
 export function Services () {
+
+    useEffect(() => {
+        document.title = 'Oboe Edits | Servicios';
+        const description = 'Consulta nuestros servicios de edición: videos, documentos, diseño gráfico y creación web. Solicita tu pedido en Oboe Edits.';
+        let meta = document.querySelector('meta[name="description"]');
+        if (meta) meta.setAttribute('content', description);
+        else {
+            meta = document.createElement('meta');
+            meta.name = 'description';
+            meta.content = description;
+            document.head.appendChild(meta);
+        }
+    }, [])
     return (
         <div className={Service.main}>
             <section className={Service.hero}>

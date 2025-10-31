@@ -33,6 +33,7 @@ const serviceData = [
   {
     type: 'image',
     image: web,
+    email: 'mailto:oboe.edits@hotmail.com?subject=Consulta%20sobre%20Creación%20de%20Sitios%20Web',
     name: 'Creación de Sitios Web Básicos',
     description: [
       'Me especializo en la creación de sitios web básicos, efectivos y de rápida implementación diseñados para pequeñas empresas, freelancers y proyectos que requieren una carta de presentación digital sólida.',
@@ -46,6 +47,7 @@ const serviceData = [
   {
     type: 'PDF',
     name: 'Edición de Archivos',
+    email: 'mailto:oboe.edits@hotmail.com?subject=Consulta%20sobre%20Edición%20de%20Archivos',
     description: ['Ofrecemos servicios profesionales de edición y creación de archivos, transformando tus ideas y datos en documentos, presentaciones y materiales digitales pulcros y funcionales. Desde la optimización de archivos existentes hasta la creación de contenido completamente nuevo, garantizamos precisión, coherencia y un acabado de alta calidad.','Te puedo ayudar a crear, editar y mejorar tus archivos PDF, Word, Excel y PowerPoint de manera rápida y eficiente.',],
     list: [
       'Curriculum Profecional', 'Presentaciones', 'Proyectos', 'Cartas de Reacomendación', 'Conversión'

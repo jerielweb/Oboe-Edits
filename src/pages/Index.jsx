@@ -4,10 +4,22 @@ import Grafico from './../assets/favicons/diseno-grafico.png'
 import Video from './../assets/favicons/edicion-de-video.png'
 import Archive from './../assets/favicons/editar-archivo.png'
 
-
-
+import { useEffect } from 'react'
 import stytleIndex from './../Styles/index.module.css'
 export function Index  () {
+
+    useEffect(() => {
+        document.title = 'Oboe Edits | Bienvenido';
+        const description = 'Oboe Edits - Servicios de edición profesional: edición de video, documentos, diseño gráfico y creación de sitios web básicos.';
+        let meta = document.querySelector('meta[name="description"]');
+        if (meta) meta.setAttribute('content', description);
+        else {
+            meta = document.createElement('meta');
+            meta.name = 'description';
+            meta.content = description;
+            document.head.appendChild(meta);
+        }
+    }, [])
     return (
         <div className={stytleIndex.main}>
             <section className={stytleIndex.hero}>

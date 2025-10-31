@@ -8,10 +8,7 @@ import { Footer } from './components/Footer.jsx'
 import { HeadersApp }from './components/Header.jsx'
 
 // Pages
-import Index from './pages/Index.jsx'
-import Contact from './pages/Contact.jsx'
-import Services  from './pages/Services.jsx'
-import Blog from './pages/Blog.jsx';
+import { Index, Contact, Services, Blog, Error404 } from './pages/index.js'
 
 
 createRoot(document.getElementById('root')).render(
@@ -24,6 +21,7 @@ createRoot(document.getElementById('root')).render(
                         <Route path='/Services' element={<Services />} />
                         <Route path='/Contact' element={<Contact />} />
                         <Route path='/Blog' element={<Blog />} />
+                        <Route path='*' element={<Error404 />} />
                     </Routes>
                 </main>
             <Footer />

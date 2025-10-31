@@ -1,9 +1,21 @@
+import { useEffect } from 'react'
 import blogData from './../content/blog.content.js'
 import blogStyle from './../Styles/blog.module.css'
 
-
-
 export function Blog () {
+
+    useEffect(() => {
+        document.title = 'Oboe Edits | Blog';
+        const description = 'Blog de Oboe Edits: casos de estudio y ejemplos de trabajo reciente en edición de video, documentos y diseño.';
+        let meta = document.querySelector('meta[name="description"]');
+        if (meta) meta.setAttribute('content', description);
+        else {
+            meta = document.createElement('meta');
+            meta.name = 'description';
+            meta.content = description;
+            document.head.appendChild(meta);
+        }
+    }, [])
     return (
         <section className={blogStyle.container}>
             <h1>Nuestros Trabajos mas Recientes</h1>
